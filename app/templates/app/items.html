@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h4>        Voici le nouveau tshirt fait par Wiips !</h4>
+    {% load static %}
+    <img src="{% static "app/images/tshirt.jpg" %}" height="300" width="300" />
+    <img src="{% static "app/images/tshirt2.png" %}" height="330" width="340" />
+    <h4> {{ user.username }} regarde cette page !</h4>
+</body>
+{% endblock %}
+
+</html>
